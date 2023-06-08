@@ -1,0 +1,17 @@
+body {
+    justify-content: center;
+}
+
+hi {
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    justify-content: center;
+    padding: 10px 20px;
+    background: #13c782;
+    color: rgb(5, 8, 7);
+    border: none;
+    cursor: pointer
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment-43-48</title>
+    <style>
+        .image {
+            display: inline-block;
+            margin: 10px;
+
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Assigment-43-48____Events</h1>
+    <hr>
+    <a href="#" id="myLink">Click me</a>
+    <hr>
+    <div class="image">
+        <img src="https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png" alt="image-1"
+            onclick="showalert('Thanks for purchasing phone from us')">
+        <img src="https://static-01.daraz.pk/p/07647f6633767961cd900bea50a52042.png" alt="image-2"
+            onclick="showalert('Thanks for purchasing phone from us')">
+        <img src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop-auspost-B2CWebShop/en_AU/feat-cat/mobile-phones/2023/Feature_Product_10003197.png"
+            alt="image-3" onclick="showalert('Thanks for purchasing phone from us')">
+        <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1682220339549/b9d540b5a782715892f75983ac303e4d.png"
+            alt="image-4" onclick="showalert('Thanks for purchasing phone from us')">
+    </div>
+    <hr>
+    <table id="studentTable">
+        <tr>
+            <th>index</th>
+            <th>Name</th>
+            <th>class</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Zohaib</td>
+            <td>10</td>
+            <td><button onclick="deleterow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Arsalan</td>
+            <td>8</td>
+            <td><button onclick="deleterow(this)">Delete</button></td>
+
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Haris</td>
+            <td>6</td>
+            <td><button onclick="deleterow(this)">Delete</button></td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Asmat</td>
+            <td>9</td>
+            <td><button onclick="deleterow(this)">Delete</button></td>
+
+        </tr>
+    </table>
+    <hr>
+
+
+    <div>
+        <img onmouseleave="this.src='https://consumer.huawei.com/content/dam/huawei-cbg-site/en/support/laptop-user-guide/img/laptop.png'"
+            src="https://consumer.huawei.com/content/dam/huawei-cbg-site/en/support/laptop-user-guide/img/laptop.png"
+            onmouseover="this.src='https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/category-pages/xs9720nt-cnb-00055rf110-gy-category-mod-800x620.png?fmt=png-alpha&wid=800&hei=620'"
+            width="300px">
+    </div>
+    <hr>
+    <h1>Counter <span id="countervalue">0</span></h1>
+    <button onclick="increasecounter()">Increase</button>
+    <button onclick="decreasecounter()">Decrease</button>
+
+    <hr>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

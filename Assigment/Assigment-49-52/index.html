@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment-49-52</title>
+    <style>
+        .form1 {
+            width: 300px;
+        }
+
+        .form1 label {
+            display: block;
+            margin-top: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .form2 {
+            width: 300px;
+        }
+
+        .form2 label {
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Assigment-49-52____Events</h1>
+    <hr>
+    <div>
+        <h1>Signup form</h1>
+        <form class="form1">
+            <label for="firstname">First name</label>
+            <input type="text" required id="firstname" name="firstname">
+            <br>
+            <label for="lastname">Last name</label>
+            <input type="text" required name="lastname" id="lastname">
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" required name="email" id="email">
+            <br>
+            <label for="password">password</label>
+            <input type="text" required name="password" id="password">
+            <br>
+            <label for="confirmpassword">confirm password</label>
+            <input type="text" required name="confirmpassword" id="confirmpassword">
+            <br>
+            <input type="submit" value="submit" onclick="displayformdata()">
+        </form>
+    </div>
+    <h2>Form Data</h2>
+    <div id="formdata"></div>
+    <hr>
+    <div>
+        <p>Grand Theft Auto V is a 2013 action-adventure game</p>
+
+        <div id="itemDetails" class="details">
+            <p>Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar
+                Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto
+                IV, and the fifteenth instalment overall. Set within the fictional state of San Andreas, based on
+                Southern California, the single-player story follows three protagonists—retired bank robber Michael De
+                Santa, street gangster Franklin Clinton, and drug dealer and gunrunner Trevor Philips—and their attempts
+                to commit heists while under pressure from a corrupt government agency and powerful criminals. The open
+                world design lets players freely roam San Andreas' open countryside and the fictional city of Los
+                Santos, based on Los Angeles</p>
+        </div>
+        <button id="readMoreBtn" onclick="toggleDetails()">Read more</button>
+    </div>
+    <hr>
+    <!-- 3 -->
+
+    <h1>Student Details</h1>
+
+    <div>
+        <h2>Add Student</h2>
+        <form class="form2">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" required><br>
+
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" required><br>
+
+            <button type="button" onclick="addStudent()">Add</button>
+        </form>
+    </div>
+
+    <h2>Student Table</h2>
+    <table id="studentTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <div id="editForm">
+        <h2>Edit Student</h2>
+        <form class="form2">
+            <input type="hidden" id="editIndex">
+
+            <label for="editName">Name:</label>
+            <input type="text" id="editName" required><br>
+
+            <label for="editAge">Age:</label>
+            <input type="text" id="editAge" required><br>
+
+            <label for="editGrade">Grade:</label>
+            <input type="text" id="editGrade" required><br>
+
+            <button type="button" onclick="updateStudent()">Update</button>
+            <button type="button" onclick="closeEditForm()">Cancel</button>
+        </form>
+    </div>
+
+    <hr>
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

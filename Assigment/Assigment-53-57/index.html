@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment-53-57</title>
+    <style>
+        img {
+            width: 300px;
+
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Assigment-53-57____Events</h1>
+    <hr>
+
+    <div>
+        <img src="https://png.pngtree.com/png-vector/20220428/ourmid/pngtree-smooth-glossy-heart-vector-file-ai-and-png-png-image_4557871.png"
+            alt="" id="image1" onclick="openModal('image1')">
+        <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-chrome-images-femalecelebrity-3.png"
+            alt="" id="image2" onclick="openModal('image2')">
+        <img src="https://play-lh.googleusercontent.com/Z878h-AVQs_FjIlMmPWIwDKRjna1joiprv_YN9rcJF6iKMjl3bhVltwDBBsbYAH-HmSV=w240-h480-rw"
+            alt="" id="image3" onclick="openModal('image3')">
+        <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/pakistan-flag-round-circle-icon.png"
+            alt="" id="image4" onclick="openModal('image4')">
+
+
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="modal-content">
+                <img id="modalImg">
+            </span>
+        </div>
+
+
+        <hr>
+    </div>
+
+    <div>
+        <h2>Paragraph Zoom</h2>
+        <p id="zoomParagraph">Grand Theft Auto V is a 2013 action-adventure game</p>
+
+        <button id="zoomInBtn" onclick="zoomIn()">Zoom In (+)</button>
+        <button id="zoomOutBtn" onclick="zoomOut()">Zoom Out (-)</button>
+    </div>
+
+    <!-- END -->
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
